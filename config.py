@@ -1,4 +1,4 @@
-# -*- mode: python; coding: utf-8-with-signature-dos -*-
+﻿# -*- mode: python; coding: utf-8-with-signature-dos -*-
 
 ##                          nickname: fakeymacs config
 ##
@@ -197,7 +197,7 @@ def configure(keymap):
 
     # スクロールに使うキーの組み合わせ（Up、Down の順）を指定する
     # scroll_key = None # PageUp、PageDownキーのみを利用する
-    scroll_key = ["M-v"]
+    scroll_key = None
 
     # 表示しているウインドウの中で、一番最近までフォーカスがあったウインドウに移動するキーを指定する
     other_window_key = "A-o"
