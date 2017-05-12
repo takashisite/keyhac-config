@@ -174,7 +174,7 @@ def configure(keymap):
     use_emacs_ime_mode = True
 
     # emacs日本語入力モードを切り替える（トグルする）キーを指定する
-    toggle_emacs_ime_mode_key = "C-t"
+    toggle_emacs_ime_mode_key = "A-t"
 
     # emacs日本語入力モードが有効なときに表示するバルーンメッセージを指定する
     # emacs_ime_mode_balloon_message = None
@@ -911,7 +911,7 @@ def configure(keymap):
     define_key(keymap_emacs, "C-Delete", reset_search(reset_undo(reset_counter(reset_mark(repeat3(kill_word))))))
     define_key(keymap_emacs, "M-d",      reset_search(reset_undo(reset_counter(reset_mark(repeat3(kill_word))))))
     define_key(keymap_emacs, "C-k",      reset_search(reset_undo(reset_counter(reset_mark(repeat3(kill_line))))))
-    define_key(keymap_emacs, "C-w",      reset_search(reset_undo(reset_counter(reset_mark(kill_region)))))
+    ## define_key(keymap_emacs, "C-w",      reset_search(reset_undo(reset_counter(reset_mark(kill_region)))))
     define_key(keymap_emacs, "M-w",      reset_search(reset_undo(reset_counter(reset_mark(kill_ring_save)))))
     define_key(keymap_emacs, "C-c",      reset_search(reset_undo(reset_counter(reset_mark(kill_ring_save)))))
     define_key(keymap_emacs, "C-y",      reset_search(reset_undo(reset_counter(reset_mark(repeat(yank))))))
