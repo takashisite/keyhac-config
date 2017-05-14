@@ -138,6 +138,7 @@ def configure(keymap):
                         # "eclipse.exe",        # Eclipse
                         # "firefox.exe",        # firefox	
 			"idea64.exe",
+			"Divvy.exe",
                         "xyzzy.exe",          # xyzzy
                         "VirtualBox.exe",     # VirtualBox
                         "XWin.exe",           # Cygwin/X
