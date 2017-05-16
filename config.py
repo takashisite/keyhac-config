@@ -221,7 +221,7 @@ def configure(keymap):
     # アクティブウィンドウをディスプレイ間で移動するキーの組み合わせ（前、後 の順）を指定する（複数指定可）
     # （other_window_key に割り当てている A-o との連係した利用を想定し、A-C-o を割り当てています。）
     # window_movement_key = None # Single display
-    window_movement_key = [[None, "A-C-o"], ["A-Left", "A-Right"]] # Multi-display
+    window_movement_key = [[None, "A-C-o"]] # Multi-display
 
     # ウィンドウを最小化、リストアするキーの組み合わせ（リストア、最小化 の順）を指定する（複数指定可）
     window_minimize_key = [["A-r", "A-m"]]
