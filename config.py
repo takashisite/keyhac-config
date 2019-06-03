@@ -110,6 +110,8 @@ def configure(keymap):
                             "ubuntu.exe",         # WSL
                             "ubuntu1604.exe",     # WSL
                             "ubuntu1804.exe",     # WSL
+                            "Hyper.exe",
+                            "wsl.exe",
                             "SLES-12.exe",        # WSL
                             "openSUSE-42.exe",    # WSL
                             "debian.exe",         # WSL
@@ -138,6 +140,7 @@ def configure(keymap):
     # IME の切り替え“のみをしたい”アプリケーションソフトを指定する
     # （指定できるアプリケーションソフトは、not_emacs_target で（除外）指定したものからのみとなります）
     ime_target           = ["bash.exe",           # WSL
+                            "wsl.exe",
                             "ubuntu.exe",         # WSL
                             "ubuntu1604.exe",     # WSL
                             "ubuntu1804.exe",     # WSL
@@ -185,7 +188,7 @@ def configure(keymap):
 
     # IME を切り替えるキーを指定する（複数指定可）
     # toggle_input_method_key = ["C-Yen"]
-    toggle_input_method_key = ["C-Yen", "C-o", "C-Quote"]
+    toggle_input_method_key = ["C-Yen", "C-o"]
 
     # C-iキーを Tabキーとして使うかどうかを指定する（True: 使う、False: 使わない）
     use_ctrl_i_as_tab = True
@@ -990,7 +993,7 @@ def configure(keymap):
     define_key(keymap_emacs, "C-e",        reset_search(reset_undo(reset_counter(mark(move_end_of_line, True)))))
     define_key(keymap_emacs, "M-S-Comma",  reset_search(reset_undo(reset_counter(mark(beginning_of_buffer, False)))))
     define_key(keymap_emacs, "M-S-Period", reset_search(reset_undo(reset_counter(mark(end_of_buffer, True)))))
-    define_key(keymap_emacs, "C-l",        reset_search(reset_undo(reset_counter(recenter))))
+    #define_key(keymap_emacs, "C-l",        reset_search(reset_undo(reset_counter(recenter))))
 
     define_key(keymap_emacs, "Left",     reset_search(reset_undo(reset_counter(mark(repeat(backward_char), False)))))
     define_key(keymap_emacs, "Right",    reset_search(reset_undo(reset_counter(mark(repeat(forward_char), True)))))
